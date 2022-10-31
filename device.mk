@@ -15,7 +15,8 @@ PRODUCT_PACKAGES += \
     UnicornSettingsProviderOverlay \
     UnicornWifiOverlay \
     UnicornFrameworksOverlay \
-    UnicornNfcOverlay
+    UnicornNfcOverlay \
+    UnicornApertureOverlay \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
