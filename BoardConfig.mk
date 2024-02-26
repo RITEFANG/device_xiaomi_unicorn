@@ -6,6 +6,12 @@
 
 DEVICE_PATH := device/xiaomi/unicorn
 
+# Powershare
+TARGET_POWERSHARE_NODE := /sys/class/qcom-battery/reverse_chg_mode
+
+# Sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # Inherit from sm8450-common
 include device/xiaomi/sm8450-common/BoardConfigCommon.mk
 
