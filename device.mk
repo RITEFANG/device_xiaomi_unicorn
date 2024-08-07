@@ -18,6 +18,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.touch_report.rc:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/etc/init/init.touch_report.rc \
     $(LOCAL_PATH)/rootdir/etc/init.touch_report.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.touch_report.rc
 
+# Graphics
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.taro.api31
+
 # Kernel
 KERNEL_PREBUILT_DIR := $(LOCAL_PATH)-kernel
 
