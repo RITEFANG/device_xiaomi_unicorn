@@ -12,7 +12,8 @@ $(call inherit-product, vendor/xiaomi/unicorn/unicorn-vendor.mk)
 
 # Overlays
 PRODUCT_PACKAGES += \
-    UnicornSettingsProviderOverlay
+    UnicornSettingsProviderOverlay \
+    UnicornWifiOverlay
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
