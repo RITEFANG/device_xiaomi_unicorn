@@ -32,12 +32,22 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.unicorn.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.unicorn.rc
-    
+
+# System Props
 PRODUCT_VENDOR_PROPERTIES += \
+    ro.surface_flinger.set_idle_timer_ms?=1000 \
+    ro.surface_flinger.set_touch_timer_ms?=200 \
+    ro.vendor.audio.us.proximity=true \
+    ro.vendor.audio.us.proximity_waitfornegative_feature=true \
+    vendor.audio.ultrasound.stoplatency=60 \
+    vendor.audio.ultrasound.usync=1000 \
     ro.vendor.sensors.notifier.light_sensors=5,33171089 \
     ro.vendor.sensors.xiaomi.single_tap=true \
-    ro.vendor.sensors.xiaomi.udfps=true
-    
+    ro.vendor.sensors.xiaomi.udfps=true \
+    persist.nfc.camera.pause_polling=true \
+    ro.miui.notch=1 \
+    ro.product.mod_device=unicorn
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
