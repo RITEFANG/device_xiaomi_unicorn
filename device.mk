@@ -10,6 +10,9 @@ $(call inherit-product, device/xiaomi/sm8450-common/common.mk)
 # Get specific aspects
 $(call inherit-product, vendor/xiaomi/unicorn/unicorn-vendor.mk)
 
+# Inherit Firmware
+$(call inherit-product-if-exists, vendor/xiaomi/firmware/unicorn/config.mk)
+
 # Init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.touch_report.rc:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/etc/init/init.touch_report.rc \
