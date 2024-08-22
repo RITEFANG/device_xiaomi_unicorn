@@ -6,6 +6,9 @@
 
 DEVICE_PATH := device/xiaomi/unicorn
 
+# Bootloader
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/configs/board/board-info.txt
+
 # Powershare
 TARGET_POWERSHARE_NODE := /sys/class/qcom-battery/reverse_chg_mode
 
